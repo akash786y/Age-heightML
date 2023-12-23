@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Height vs Weight</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        center {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            border: 1px solid #ccc;
+            margin-bottom: 20px;
+        }
+
+        form {
+            text-align: center;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 10px;
+        }
+
+        input {
+            padding: 8px;
+            margin-bottom: 10px;
+        }
+
+        input[type="submit"] {
+            background-color: #4caf50;
+            color: white;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h1>Height vs Weight using ML</h1>
+    <center>
+        <img src="{{ href }}" height=500 />
+        <form method="POST">
+            <label>Enter comma separated values of ages: </label>
+            <input name="text">
+            <input type="submit">
+        </form>
+    </center>
+</body>
+
+</html>
+
+<!-- <center>
+    <img src="{{ href }}" height=600 />
+    <form method="POST">
+        <label>Input a comma-separated list of age values: </label>
+        <input name="text">
+        <input type="submit">
+    </form>
+</center> -->
